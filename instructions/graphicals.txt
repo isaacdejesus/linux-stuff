@@ -1,0 +1,4 @@
+Install xorg to enable graphical stuff
+--------------------------------------------------------------------
+sudo pacman -S xorg-server xorg-apps xorg-xinit xterm
+
