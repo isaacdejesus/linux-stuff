@@ -1,0 +1,6 @@
+Update db
+sudo pacman -Syy
+sudo vim /etc/pacman.d/mirrorlist
+place desired mirrors at the top
+updaters reads files top to bottom
+or just delete mirrors not in the us

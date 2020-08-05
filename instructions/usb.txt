@@ -1,0 +1,21 @@
+Following will list drives/partitions
+lsblk
+sudo parted -l 
+
+-To mount an usb
+create dir to act as mount point
+ex. /home/usb
+then mount usb using
+sudo mount /dev/subname /home/usb
+then just navigate to /home/usb to view files
+
+-To unmount usb
+sudo umount /home/usb
+or
+sudo umount /dev/usbname
+
+-To automatically mount usb
+add entry to fstab file located at /etc/fstab
+to obtain UUID of usb run 
+sudo blkid
+

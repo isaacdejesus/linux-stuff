@@ -1,0 +1,7 @@
+pacman -Syu to update and upgrade at the same time
+Might get errors related to outdated gph keys
+If outdated gpg keys
+sudo pacman -Sy archlinux-keyring && sudo pacman -Su
+
+If errors related to xorg such as xorg breaks dmxproto
+pacman -Rdd libdmx libxxf86dga & pacman -Syu
