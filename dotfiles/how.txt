@@ -1,0 +1,13 @@
+.Xresources
+Current version works with lukesmit's st
+xrdb ~/.Xresources
+
+.bashrc
+
+
+.vimrc
+
+:source %
+:PlugInstall
+navigate to ~/.vim/plugged/YouCompleteMe
+./install.py

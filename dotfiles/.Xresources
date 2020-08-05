@@ -1,0 +1,20 @@
+*.color0: red
+*.color1: green
+*.color2: yellow
+*.color3: #d79921
+*.color4: #458588
+*.color5: #b16286
+*.color6: #689d6a
+*.color7: #a89984
+*.color8: red
+*.color9: #fb4934
+*.color10: #b8bb26
+*.color11: #fabd2f
+*.color12: #83a598
+*.color13: #d2869b
+*.color14: #8ec07c
+*.color15: orange
+
+*.background: #19041e
+st.alpha: .30
+*.font: monospace:pixelsize=18:antialias=true:autohint:true;

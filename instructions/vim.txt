@@ -1,0 +1,7 @@
+copy .vimrc to root dir
+~/.vimrc
+ open file and run
+:source %
+:PlugInstall
+cd ~/.vim/plugged/YouCompleteMe
+./install.py
