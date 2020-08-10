@@ -34,6 +34,8 @@ au BufNewFile,BufRead *.py,*.pyw,*.c,*.h match BadWhitespace /\s+$/
 
 call plug#begin('~/.vim/plugged')
 
+
+Plug 'Valloric/YouCompleteMe'
 Plug 'morhetz/gruvbox'
 Plug 'jremmen/vim-ripgrep'
 Plug 'tpope/vim-fugitive'
@@ -41,7 +43,6 @@ Plug 'leafgarland/typescript-vim'
 Plug 'vim-utils/vim-man'
 Plug 'lyuts/vim-rtags'
 Plug 'kien/ctrlp.vim'
-Plug 'Valloric/YouCompleteMe'
 Plug 'mbbill/undotree'
 Plug 'tmhedberg/SimpylFold'
 Plug 'vim-scripts/indentpython.vim'
