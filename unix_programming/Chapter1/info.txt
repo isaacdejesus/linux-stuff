@@ -1,0 +1,24 @@
+Commands
+--------------------------------------------------------------
+date
+who
+whoami
+man
+
+
+
+
+---------------------------------------------------------------
+combinations
+--------------------------------------------------------------
+Ctrl + u: Deletes words from terminal line
+Ctrl + d: Log off terminal
+#: comment on the terminal
+--------------------------------------------------------------
+File processing
+--------------------------------------------------------------
+wc: counts lines, words and characters on a file
+grep: Searches file for lines that match a pattern
+->ex. grep pattern filename
+->-v option looks for lines that don't match pattern
+-->ex. grep -v pattern filename

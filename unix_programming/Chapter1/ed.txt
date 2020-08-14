@@ -1,0 +1,9 @@
+ed text editor
+-----------------------------------
+ed: to open the editor
+a: command to add text 
+. command to stop adding text
+w filename: to write to file
+q exit
+
+ed filename: to open a file with ed
