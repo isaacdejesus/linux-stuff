@@ -1,0 +1,7 @@
+A file is a sequence of bytes. 
+Byte is 8 bits long.
+Byte = one char
+
+od: command shows visual representation of bytes in file
+od -cb filename prints out the octal representation of each byte
+

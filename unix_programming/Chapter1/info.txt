@@ -4,7 +4,7 @@ date
 who
 whoami
 man
-
+w
 
 
 
@@ -18,7 +18,98 @@ Ctrl + d: Log off terminal
 File processing
 --------------------------------------------------------------
 wc: counts lines, words and characters on a file
+
 grep: Searches file for lines that match a pattern
 ->ex. grep pattern filename
 ->-v option looks for lines that don't match pattern
 -->ex. grep -v pattern filename
+
+sort:
+
+tail: Prints last 10 lines of a file
+tail -1 filename: prints last line
+tail +3 filename: starts printing from 3rd line
+
+cmp: Returns first place in which two files differ
+cmp file1 file2
+
+diff: Reports lines changed, added or deleted
+cmp file1 file2
+--------------------------------------------------------------
+Directories
+--------------------------------------------------------------
+pwd:
+
+executables are located at /bin or /usr/bin
+When a program such as date is run. The system looks for it in the current directory.
+Then checks the bins. /bin is a collection of programs to make it easier for the system
+to find. Therefore, most programs can alternatively be run as:
+/bin/ls 
+/bin/pwd
+/bin/date
+
+cd: change dir
+mkdir: create a dir
+rmdir: to delete empty dir
+--------------------------------------------------------------
+* is a pattern selector
+echo ch* will search for all files in directory that start with ch
+echo * will list all files in directory
+rm *.save will delete all files that end with .save
+rm * will delete all files in current directory
+
+? pattern matches a single char
+ls ? will list all single char named files
+ls -l ch?.1 will list all files ch1.1 ch2.1 ch3.1 and so on
+--------------------------------------------------------------
+Redirection
+--------------------------------------------------------------
+> redirects output to specified file
+ls > filename
+cat file1 file2 file3 > file
+
+>> will add output to the end of the file
+
+cat file1 file2 >> file
+
+< take input from file
+ex. ls > temp
+sort <temp
+-------------------------------------------------------------
+pipes
+------------------------------------------------------------
+| connects output of one program with the input of another program
+ex.
+ ls | sort:
+ --------------------------------------------------------------
+ ; allows you to run multiple programs at once.
+ who;date;pwd
+
+ & allows a time consuming to run on the background while giving you control of terminal
+ ex.
+ wc longfile &
+command will return a process id
+
+kill: kills a process- an instance of a program
+kill 0 will kill all processes
+ps: will list processes
+
+nice: runs computive intensive programs at lower priority
+ex.
+nice wc long file &
+----------------------------------------------------------------------------
+variables
+---------------------------------------------------------------------
+.bashrc contains PS1 or shell prompt
+PATH env variable contains search path to /bin
+can be altered: PATH=$PATH:/location/of/executable
+$PATH will give you values stores in the PATH variable
+
+also possible to create a variable to access a file location
+ex.
+d=/long/path/to/certain/file
+then we can use it with
+cd $d
+
+export tells shell that we want to use the command in other programs.
+
