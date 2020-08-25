@@ -5,3 +5,38 @@ Byte = one char
 od: command shows visual representation of bytes in file
 od -cb filename prints out the octal representation of each byte
 
+file *
+
+file filename
+
+du - :displays disk usage. Numbers are blocks of either 512/1024 bytes each
+du -a: displays subdirectories
+results can be piped to grep to search for files
+du -a | grep pattern
+
+
+--------------------------------------------------------------------------------
+Permissions
+------------------------------------------------------------------------------
+grep username /etc/passwd 
+
+the /etc/passwd file contains login info/pass for all users.
+
+ls -l displays permissions
+
+given the following string:
+-rw-r-r--r--
+the first bit indicates if it is a directory or a file.
+d indicates directory
+- indicates a file
+Next 3 bits indicate owner permissions: rw-, can read, write but not exe
+Next 3 bits indicate group permissions: r--, can read, not write or exe
+Next 3 bits indicate everyone else permissions: r--, read, not everything else
+
+/bin/passwd is the program that allows users to change passwords
+
+ls -l /bin/passwd
+-rwsr-xr-x
+
+Permissions of passwd indicate everyone can execute the program but only root can
+change the command. s bit means that when command is run, it needs permissions/p
