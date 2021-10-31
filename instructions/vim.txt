@@ -5,3 +5,6 @@ copy .vimrc to root dir
 :PlugInstall
 cd ~/.vim/plugged/YouCompleteMe
 ./install.py
+
+create undo dir
+mkdir ~/.vim/undodir -p
