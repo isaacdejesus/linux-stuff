@@ -1,0 +1,18 @@
+To install packages from AUR
+-------------------------------------------
+I keep these under /installs
+->git clone link
+->cd into /installs/link
+->makepkg -s
+->sudo pacman -U extracted_filename
+
+To update packages from AUR
+------------------------------------------
+-> cd to /installs/link
+->git pull
+->makepkg -s
+->sudo pacman -U extracted_file
+
+
+
+

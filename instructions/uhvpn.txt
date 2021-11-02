@@ -1,0 +1,13 @@
+https://uh.edu/infotech/services/computing/networks/vpn/installation-for-linux-ubuntu/
+download for linux
+run: sudo bach filename
+then launch app using
+/opt/cisco/anyconnect/bin/vpnui
+
+sudo pacman -S webkit2gtk
+
+then connect to vpn using
+vpn.uh.edu
+idreyes@cougarnet.uh.edu
+pass
+

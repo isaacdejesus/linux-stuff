@@ -4,4 +4,5 @@ pithos
 --------
 download the file->cd into folder containing build
 makepkg -s
+or makepkg -si
 sudo pacman -U pithos...
