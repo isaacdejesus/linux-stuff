@@ -13,6 +13,10 @@ To update packages from AUR
 ->makepkg -s
 ->sudo pacman -U extracted_file
 
-
+------------------------------------------
+Certain programs required linkage
+-----------------------------------------
+Ex. insomnia
+sudo ln -s /opt/insomnia/insomania /usr/bin/insomnia
 
 
