@@ -1,0 +1,43 @@
+sudo pacman -S pgadmin4
+Package is out of date doesn't work
+----------------------------------
+Program can be run using docker container
+----------------------------------------
+In the meantime, if it's important to get a version of pgAdmin working, a simple solution is to use docker:
+
+* Install Docker
+* Install docker-compose
+* Create a directory named pgadmin.
+* Inside the new directory, copy the configuration from this post into a file named docker-compose.yml
+* Run docker-compose up -d in the same directory as the docker-compose.yml file.
+* Use docker ps -a to see your running pgAdmin
+* Go to http://localhost:9201 to use pgAdmin
+* Use docker-compose down to shut it down
+
+-------------------------------------------------
+This is the code for the docker-compose.yml
+-------------------------------------------------
+
+version: "3.8"
+  
+volumes:
+  pgadmin-data:
+services:
+  pgadmin:
+    image: dpage/pgadmin4
+    ports:
+      - "9201:80"
+    environment:
+      PGADMIN_DEFAULT_EMAIL: root@localhost.localdomain
+      PGADMIN_DEFAULT_PASSWORD: secret
+      PGADMIN_DISABLE_POSTFIX: "true"
+      PGADMIN_CONFIG_SERVER_MODE: "False"
+    volumes:
+      - pgadmin-data:/var/lib/pgadmin
+
+---------------------------------------------------
+If permission errors arise when running docker
+sudo groupadd docker
+sudo usermod -aG docker $USER
+newgrp docker
+reboot if error and try to run docker
