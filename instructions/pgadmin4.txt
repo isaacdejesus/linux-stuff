@@ -41,3 +41,21 @@ sudo groupadd docker
 sudo usermod -aG docker $USER
 newgrp docker
 reboot if error and try to run docker
+--------------------------------------------------
+Above doesn't work:
+sudo mkdir /var/lib/pgadmin
+sudo mkdir /var/log/pgadmin
+sudo chown $USER /var/lib/pgadmin
+sudo chown $USER /var/log/pgadmin
+
+run the above and after that create a virtual environment with python3 and inside that environment just do:
+pip install pgadmin4 gevent
+then just type pgadmin4 
+initial pgadmin account is:
+isaacdejesusreyes18@gmail.com
+Teh#
+-----------------------------------------------
+Connect to server by giving the connection a name
+localhost
+postgresql username/isaac
+password
