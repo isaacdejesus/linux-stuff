@@ -18,8 +18,8 @@ set incsearch
 set foldmethod=indent
 set foldlevel=99
 
-set colorcolumn=90
-highlight ColorColumn ctermbg=0 guibg=lightgrey
+"set colorcolumn=90
+"highlight ColorColumn ctermbg=0 guibg=lightgrey
 
 "Following only appply to .py files
 au BufNewFile,BufRead *.py
@@ -33,8 +33,6 @@ au BufNewFile,BufRead *.py
 au BufNewFile,BufRead *.py,*.pyw,*.c,*.h match BadWhitespace /\s+$/
 
 call plug#begin('~/.vim/plugged')
-
-
 Plug 'Valloric/YouCompleteMe'
 Plug 'morhetz/gruvbox'
 Plug 'jremmen/vim-ripgrep'
@@ -52,12 +50,12 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'scrooloose/nerdtree'
 Plug 'jistr/vim-nerdtree-tabs'
 Plug 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+Plug 'jiangmiao/auto-pairs'
 call plug#end()
 
 
 "colorscheme gruvbox
-"set background=dark
-
+set background=dark
 if executable('rg')
     let g:rg_derive_root='true'
 endif
@@ -85,18 +83,4 @@ nnoremap <silent> <leader>+ :vertical resize +5<CR>
 nnoremap <silent> <leader>- :vertical resize -5<CR>
 nnoremap <silent> <leader>gd :YcmCompleter GoTo<CR>
 nnoremap <silent> <leader>gf :YcmCompleter FixIt<CR>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
