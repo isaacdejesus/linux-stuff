@@ -12,3 +12,5 @@ PS1+="$(tput setaf 118)\h";
 PS1+="$(tput setaf 208)\w++>";
 PS1+="$(tput sgr0)";
 export PS1;
+
+PROMPT_DIRTRIM=1
