@@ -31,3 +31,5 @@ Access a given db
 quit
 \q
 
+Get port/connection info
+\conninfo

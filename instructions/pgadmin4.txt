@@ -49,6 +49,8 @@ sudo chown $USER /var/lib/pgadmin
 sudo chown $USER /var/log/pgadmin
 
 run the above and after that create a virtual environment with python3 and inside that environment just do:
+--->Access virtual env with: source .venv/bin/ativate
+--->exit virtual env with: deactivate
 pip install pgadmin4 gevent
 then just type pgadmin4 
 initial pgadmin account is:
@@ -59,3 +61,9 @@ Connect to server by giving the connection a name
 localhost
 postgresql username/isaac
 password
+--------------------------------
+To launch pgadmin
+Navigate to pgadmin folder
+source .venv/bin/activate
+pgadmin4
+open browser to given ip and log in using info above
