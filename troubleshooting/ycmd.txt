@@ -1,0 +1,4 @@
+Sometimes after system update autocomplete with youcompleteme will break
+and say ycdm server shutdown, needs restart. 
+-----------------------------------------------------------------------
+Fix by navigating to: .vim/plugged/YouCompleteMe and running ./install.py
