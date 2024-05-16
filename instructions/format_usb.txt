@@ -1,0 +1,6 @@
+If usb not being recognized on windows or entire size not showing
+Look up low level format tool. I'll add it to the drive
+run the tool on usb to clear it.
+then format normally on windows
+https://hddguru.com/software/HDD-LLF-Low-Level-Format-Tool/
+
